@@ -2,25 +2,50 @@
     <head>
         <title>EPAM SignIn</title>
         <link rel="stylesheet" href="cssfile.css">
+        <script type="text/javascript">
+        function loginValid() {
+            var name = document.getElementById("email").value;
+            var pass = document.getElementById("pwd").value;
+            alert("hello");
+            if (name == "") {
+                window.alert("Please enter your Email");
+                return false;
+            }
+            if ((name.length <= 2) || (name.length > 20)) {
+                window.alert("**user length must be between 2 and 20");
+                return false;
+            }
+            if (!isNaN(name)) {
+                window.alert("**only characters are allowed");
+                return false;
+            }
+            if (pass == "") {
+                window.alert("Please enter your password");
+                return false;
+            }
+        }
+    </script>
+
+
 
     </head>
 
-    <body>         
+    <body>
         <div class="card">
             <div class="ribbon-3"><div class="sign">SIGN IN</div></div>
             <div class="container">
-                <form action="action.php" method="post">
-                    <input type="email" placeholder="Enter Email" required><br>
-                    <input type="password" placeholder="Enter Password" required maxlength="20"><br>
-                    <input type="submit" value="Sign In"><br>
-                    <div class="forget"><a href=/forget.html>  Forget Password</a>  &emsp;&emsp;&emsp;&emsp;&emsp;&nbsp; <a href=/register.html>  Register</a><br></div>
+                <form action="#" onsubmit="return loginValid()">
+                    <input type="text" placeholder="Enter your user name" id="email" maxlength="20"><br>
+                    <input type="password" placeholder="Enter Password" id="pwd"  maxlength="20"><br>
+                    <input type="submit"  value="Sign In"><br>
+                    <div class="forget"><a href=forgot.html>  Forget Password</a>  &emsp;&emsp;&emsp;&emsp;&emsp;&nbsp; <a href=register.html>  Register</a><br></div>
 					<hr class="hr-text" data-content="OR">
-                    <input type="button" value="facebook"><br>
+                    <input type="button" value="facebook" ><br>
                     <input type="button" value="Google"><br>
                     <input type="button" value="<EPAM LOGIN>"><br>
                 </form>
             </div>
-        </div> 
+        </div>
     </body>
 
 </html>

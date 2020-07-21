@@ -1,0 +1,37 @@
+<html>
+    <head>
+        <title>EPAM Forgot Password</title>
+        <link rel="stylesheet" href="cssfile.css">
+    </head>
+<script>
+ function validPass()
+ {
+   //alert("hello");
+   var a=document.getElementById("p1").value;
+   var b=document.getElementById("p2").value;
+   if(a!=b)
+   {
+     alert("password dont match");
+     return false;
+   }
+   if(a==''||b=='')
+   {
+     alert("Please enter the password");
+     return false;
+   }
+ }
+</script>
+    <body>
+        <div class="card">
+            <div class="ribbon-3"><div class="sign">reset your password</div></div>
+            <div class="container">
+                <form action="#" onsubmit="validPass()"method="get">
+                    <input type="text" placeholder="Enter your password" id="p1" maxlength="20"><br>
+                    <input type="text" placeholder="Conform Password" id="p2"  maxlength="20"><br>
+                    <input type="submit"  value="Sign In">
+                </form>
+            </div>
+        </div>
+    </body>
+
+</html>

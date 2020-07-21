@@ -1,17 +1,17 @@
-card 
+card
 {
-  
+
   box-shadow: 0 4px 9px 0 rgba(0,0,0,0.3);
   transition: 0.3.5s;
   width: 450px;
   height: 550px;
   margin-left: 25cm;
   margin-top: 6cm;
-  
-   text-align: center; 
-   text-align: center; 
+
+   text-align: center;
+   text-align: center;
 }
-form 
+form
 {
     display: inline-block;
     width: fit-content;
@@ -19,13 +19,13 @@ form
 	margin-left:20px;
 }
 
-.card:hover 
+.card:hover
 {
   box-shadow: 0 9px 18px 0 rgba(0,0,0,0.233);
 }
 
 
-.container 
+.container
 {
   padding: 3px 18px 20px 20px;
 }
@@ -68,7 +68,7 @@ form
 }
 
 
-input[type=email]
+input[type=text]
 {
   margin-top: 12mm;
   margin-bottom: 5mm;
@@ -136,7 +136,7 @@ input[value="<EPAM LOGIN>"]
 }
 
 
-.ribbon-3 
+.ribbon-3
 {
   width: 400px;
   height: 50px;
